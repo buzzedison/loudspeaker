@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Button, Card } from "react-bootstrap";
+import Styles from "./sectionb";
 
 class Section extends Component {
   render() {
@@ -8,7 +9,7 @@ class Section extends Component {
         <Container>
           <Row className="Sectionrow">
             <Col sm={6} className="sectioncol">
-              ll
+              <Styles />
             </Col>
             <Col sm={6} className="sectioncol2">
               <Card className="cardmarket">
