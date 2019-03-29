@@ -13,10 +13,10 @@ class OtherHeader extends Component {
                 <Card.Img src={Background} alt="Slider" />
                 <Card.ImgOverlay>
                   <Card.Text className="cardtext">
-                    <p>
+                    <h2>
                       Relentless focus on reaching your target customers with
                       your brand and stories
-                    </p>
+                    </h2>
                     <h4>
                       We find out what your customers or potential customers
                       want and show you how to deliver based on findings

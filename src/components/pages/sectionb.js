@@ -8,13 +8,14 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import game from "./game.jpg";
 
 const styles = {
   card: {
     maxWidth: 345
   },
   media: {
-    height: 140
+    height: 180
   }
 };
 
@@ -24,8 +25,10 @@ function MediaCard(props) {
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
+          component="img"
+          alt="Reviews"
           className={classes.media}
-          image="/game.jpg"
+          image={game}
           title="Movie Reviews"
         />
         <CardContent>
