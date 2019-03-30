@@ -1,26 +1,23 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
+import HomePage from "./homepage";
+import Insight from "./components/pages/insight";
 import Header from "./components/header/mainheader";
-import OtherHeader from "./components/header/otherheader";
-import MainPage from "./components/pages/mainpage";
-import Section from "./components/pages/section";
-import MainFooter from "./components/footer/mainfooter";
-import ServicesHead from "./components/pages/serviceshead";
+import BootCamp from "./components/pages/bootcamp";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Header />
-          <OtherHeader />
-        </header>
-        <Section />
-        <MainPage />
-        <ServicesHead />
-        <MainFooter />
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/insight" component={Insight} />
+          <Route path="/bootcamp" component={BootCamp} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

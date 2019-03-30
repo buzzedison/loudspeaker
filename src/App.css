@@ -89,3 +89,23 @@ mainpage {
 .mainButton {
   margin-left: 20px;
 }
+
+.mygrid {
+  background: #ffac12;
+}
+
+.digihead {
+  background: #ffac12;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.digitext {
+  margin: 10px;
+}
+
+.bootimage {
+  margin: 10px;
+  margin-top: 20px;
+}

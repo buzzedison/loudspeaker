@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import logo from "./logo.png";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   render() {
     return (
       <header>
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home" className="logo">
+          <Navbar.Brand className="logo">
             <img src={logo} alt="my logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -48,9 +49,9 @@ class Header extends Component {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link className="autosmall" href="#link">
+              <NavLink to="/bootcamp">
                 <Button> DIGITAL BOOTCAMP</Button>
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
