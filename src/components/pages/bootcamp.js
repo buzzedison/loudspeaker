@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Boot from "./bootcamp.png";
+import { NavLink } from "react-router-dom";
 
 class BootCamp extends Component {
   render() {
@@ -40,9 +41,9 @@ class BootCamp extends Component {
                 marketing strategies for real clients, in an agency-style
                 environment.
               </p>
-              <Button size="lg" Navlink to="/bootcamp_form">
-                Apply Now!
-              </Button>
+              <NavLink to="/bootcamp_form">
+                <Button size="lg">Apply Now!</Button>
+              </NavLink>
             </Col>
             <Col sm className="bootimage">
               <img src={Boot} alt="bootcamp" />
