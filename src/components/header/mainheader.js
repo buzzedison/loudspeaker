@@ -8,16 +8,16 @@ class Header extends Component {
     return (
       <header>
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand className="logo">
+          <Navbar.Brand className="logo" href="/">
             <img src={logo} alt="my logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link className="autosmall" href="#home">
+              <Nav.Link className="autosmall" href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="autosmall" href="#link">
+              <Nav.Link className="autosmall" href="/about">
                 Who we are
               </Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">

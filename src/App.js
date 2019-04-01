@@ -6,6 +6,7 @@ import HomePage from "./homepage";
 import Insight from "./components/pages/insight";
 import Header from "./components/header/mainheader";
 import BootCamp from "./components/pages/bootcamp";
+import DigiForm from "./components/pages/digiform";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/insight" component={Insight} />
           <Route path="/bootcamp" component={BootCamp} />
+          <Route path="/bootcamp_form" component={DigiForm} />
         </Switch>
       </BrowserRouter>
     );

@@ -40,7 +40,9 @@ class BootCamp extends Component {
                 marketing strategies for real clients, in an agency-style
                 environment.
               </p>
-              <Button size="lg"> Apply Now!</Button>
+              <Button size="lg" href="/bootcamp_form">
+                Apply Now!
+              </Button>
             </Col>
             <Col sm className="bootimage">
               <img src={Boot} alt="bootcamp" />
