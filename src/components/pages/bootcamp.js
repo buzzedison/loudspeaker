@@ -40,7 +40,7 @@ class BootCamp extends Component {
                 marketing strategies for real clients, in an agency-style
                 environment.
               </p>
-              <Button size="lg" href="/bootcamp_form">
+              <Button size="lg" Navlink to="/bootcamp_form">
                 Apply Now!
               </Button>
             </Col>
