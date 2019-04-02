@@ -32,7 +32,6 @@ class DigiForm extends Component {
               <Form
                 name="bootcamp"
                 method="POST"
-                netlify-honeypot="bot-field"
                 data-netlify="true"
                 noValidate
                 validated={validated}
