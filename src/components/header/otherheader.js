@@ -14,7 +14,7 @@ class OtherHeader extends Component {
                 <Card.ImgOverlay>
                   <Card.Text className="cardtext">
                     <h2>
-                      Relentless focus on reaching your target customers with
+                      Relentless edison focus on reaching your target customers with
                       your brand and stories
                     </h2>
                     <h4>
