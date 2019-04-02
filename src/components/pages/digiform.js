@@ -30,6 +30,8 @@ class DigiForm extends Component {
           <Row>
             <Col sm={7}>
               <Form
+                name="bootcamp"
+                method="POST"
                 noValidate
                 validated={validated}
                 onSubmit={e => this.handleSubmit(e)}
