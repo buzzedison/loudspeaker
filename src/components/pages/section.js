@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Row, Col, Container, Button, Card } from "react-bootstrap";
+import { Row, Col, Container, Button, Card, Nav } from "react-bootstrap";
 import Styles from "./sectionb";
+import { NavLink } from "react-router-dom";
 
 class Section extends Component {
   render() {
@@ -23,10 +24,13 @@ class Section extends Component {
                     make money with digital tools. Job interviews for successful
                     candidates
                   </Card.Text>
-                  <Button variant="primary">Sign up now</Button>
+                  <Nav>
+                    <NavLink to="/bootcamp_form">
+                      <Button variant="primary">Sign up now</Button>
+                    </NavLink>
+                  </Nav>
                 </Card.Body>
               </Card>
-              ;
             </Col>
           </Row>
         </Container>

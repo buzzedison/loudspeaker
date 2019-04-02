@@ -44,7 +44,7 @@ class ServicesHead extends Component {
                   </Card.Title>
                   <Card.Text>
                     In a nutshell, we can make your company look so good. We can
-                    make you look the path
+                    make you look the part
                   </Card.Text>
                   <Button variant="warning">Find out more</Button>
                 </Card.Body>
