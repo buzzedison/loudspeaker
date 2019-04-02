@@ -33,6 +33,8 @@ class DigiForm extends Component {
                 noValidate
                 validated={validated}
                 onSubmit={e => this.handleSubmit(e)}
+                netlify-honeypot="bot-field"
+                data-netlify="true"
               >
                 <Form.Group controlId="formfirstname">
                   <Form.Control placeholder="First name" required />
