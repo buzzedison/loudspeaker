@@ -18,8 +18,8 @@ class Header extends Component {
                 Home
               </Nav.Link>
 
-              <Nav.Link className="autosmall" href="/about">
-                Who we are
+              <Nav.Link className="autosmall" Link to="/about">
+                <NavLink to="/about">Who we are</NavLink>
               </Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Design</NavDropdown.Item>
