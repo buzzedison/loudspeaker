@@ -8,6 +8,7 @@ import Header from "./components/header/mainheader";
 import BootCamp from "./components/pages/bootcamp";
 import DigiForm from "./components/pages/digiform";
 import About from "./components/pages/about";
+import Success from "./components/pages/success";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/bootcamp" component={BootCamp} />
           <Route path="/bootcamp_form" component={DigiForm} />
           <Route path="/about" component={About} />
+          <Route path="/success" component={Success} />
         </Switch>
       </BrowserRouter>
     );
