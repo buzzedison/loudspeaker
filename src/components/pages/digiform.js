@@ -29,16 +29,8 @@ class DigiForm extends Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  handleSubmit(event) {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    this.setState({ validated: true });
-  }
   render() {
-    const { firstname, lastname, email, message, validated } = this.state;
+    const { firstname, lastname, email, message } = this.state;
     return (
       <div>
         <Container fluid>
@@ -52,10 +44,7 @@ class DigiForm extends Component {
               <Form
                 name="bootcamp"
                 method="POST"
-                action="/success"
                 data-netlify="true"
-                noValidate
-                validated={validated}
                 onSubmit={this.handleSubmit}
               >
                 <Form.Group controlId="formfirstname">
