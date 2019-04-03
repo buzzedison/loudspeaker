@@ -15,7 +15,7 @@ class DigiForm extends Component {
           </Row>
           <Row>
             <Col sm={7}>
-              <NetlifyForm onSubmit={this.handleSubmit}>
+              <NetlifyForm name="bootcamp" onSubmit={this.handleSubmit}>
                 {({ loading, error, success }) => (
                   <div>
                     {loading && <div>Loading...</div>}
@@ -27,6 +27,9 @@ class DigiForm extends Component {
                     {success && <div>Thank you for contacting us!</div>}
                     {!loading && !success && (
                       <div>
+                        <Form.Group controlId="formfirstname">
+                          <input type="hidden" name="contact" value="contact" />
+                        </Form.Group>
                         <Form.Group controlId="formfirstname">
                           <Form.Control
                             name="firstname"
