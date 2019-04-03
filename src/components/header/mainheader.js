@@ -17,6 +17,7 @@ class Header extends Component {
               <Nav.Link className="autosmall" href="/">
                 Home
               </Nav.Link>
+
               <Nav.Link className="autosmall" href="/about">
                 Who we are
               </Nav.Link>
