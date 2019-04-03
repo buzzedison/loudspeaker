@@ -27,7 +27,7 @@ class DigiForm extends Component {
                     {success && <div>Thank you for contacting us!</div>}
                     {!loading && !success && (
                       <div>
-                        <Form.Group controlId="formfirstname">
+                        <Form.Group controlId="contact">
                           <input type="hidden" name="contact" value="contact" />
                         </Form.Group>
                         <Form.Group controlId="formfirstname">
