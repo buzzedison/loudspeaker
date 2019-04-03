@@ -41,12 +41,7 @@ class DigiForm extends Component {
           </Row>
           <Row>
             <Col sm={7}>
-              <Form
-                name="bootcamp"
-                method="POST"
-                data-netlify="true"
-                onSubmit={this.handleSubmit}
-              >
+              <Form onSubmit={this.handleSubmit}>
                 <Form.Group controlId="formfirstname">
                   <Form.Control
                     name="firstname"
