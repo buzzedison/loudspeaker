@@ -41,7 +41,6 @@ class DigiForm extends Component {
                             Please provide a first name.
                           </Form.Control.Feedback>
                         </Form.Group>
-
                         <Form.Group controlId="formlastname">
                           <Form.Control
                             name="lastname"
@@ -61,14 +60,17 @@ class DigiForm extends Component {
                             onChange={this.handleChange}
                             required
                           />
-                          <Form.Control.Feedback type="invalid">
-                            Please provide a valid email address.
-                          </Form.Control.Feedback>
-                          <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                          </Form.Text>
                         </Form.Group>
 
+                        <Form.Group controlId="formPhoneNumber">
+                          <Form.Control
+                            type="tel"
+                            name="phone_num"
+                            placeholder="Enter your mobile number"
+                            onChange={this.handleChange}
+                            required
+                          />
+                        </Form.Group>
                         <Form.Group controlId="exampleForm.ControlTextarea1">
                           <Form.Label>
                             <strong>
