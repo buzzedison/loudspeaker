@@ -64,7 +64,7 @@ class DigiForm extends Component {
 
                         <Form.Group controlId="formPhoneNumber">
                           <Form.Control
-                            type="tel"
+                            type="text"
                             name="phone_num"
                             placeholder="Enter your mobile number"
                             onChange={this.handleChange}
